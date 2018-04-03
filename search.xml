@@ -1,6 +1,17 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title><![CDATA[面试碰到的问题]]></title>
+    <url>%2F2018%2F04%2F03%2F%E9%9D%A2%E8%AF%95%E7%A2%B0%E5%88%B0%E7%9A%84%E9%97%AE%E9%A2%98%2F</url>
+    <content type="text"><![CDATA[写这篇文章的初衷离职了一段时间，也参加了一些面试，突然发现自己的基础还比较薄弱，所以想通过整理一些碰到的面试问题，进行知识点的梳理，不排除分享一些HR问的骚操作。 js 遍历json对象JSON数组 (无规律)123456789101112131415var json = [ &#123;dd:&apos;SB&apos;,AA:&apos;东东&apos;,re1:123&#125;, &#123;cccc:&apos;dd&apos;,lk:&apos;1qw&apos;&#125;];for(var i=0,l=json.length;i&lt;l;i++)&#123; for(var key in json[i])&#123; console.log(key+&apos;:&apos;+json[i][key]); &#125;&#125;// dd:SB// AA:东东// re1:123// cccc:dd// lk:1qw JSON数组 (有规律)123456789101112var packJson = [ &#123;&quot;name&quot;:&quot;nikita&quot;, &quot;password&quot;:&quot;1111&quot;&#125;, &#123;&quot;name&quot;:&quot;tony&quot;, &quot;password&quot;:&quot;2222&quot;&#125;]; for(var p in packJson)&#123; //遍历json数组时，这么写p为索引，0,1 console.log(packJson[p].name + &quot; &quot; + packJson[p].password);&#125;;// nikita 1111// tony 2222 JSON对象1234567891011var myJson = &#123; &quot;name&quot;:&quot;caibaojian&quot;, &quot;password&quot;:&quot;1111&quot;&#125;; for(var p in myJson)&#123; //遍历json对象的每个key/value对,p为key console.log(p + &quot; &quot; + myJson[p]);&#125;// name caibaojian// password 1111 顺带举例几个JSON常用操作123456789101112131415161718192021JSON字符串：var isStr = &apos;&#123; &quot;name&quot;: &quot;wwx&quot;, &quot;sex&quot;: &quot;man&quot;&#125;&apos;;JSON对象：var isObj = &#123; &quot;name&quot;: &quot;wwx&quot;, &quot;sex&quot;: &quot;man&quot;&#125;;//字符串转JSONvar obj = JSON.parse(isStr);//JSON转字符串var str = JSON.stringify(obj);//JSON增加元素obj[&apos;key&apos;] = value;//JSON删除元素delete obj[&apos;key&apos;];//JSON按数字排序obj.sort(sortBy(&apos;key&apos;, false, parseInt));//JSON按字符串排序obj.sort(sortBy(&apos;key&apos;, false, String));]]></content>
+      <categories>
+        <category>面试中的翻车</category>
+      </categories>
+      <tags>
+        <tag>面试整理</tag>
+      </tags>
+  </entry>
+  <entry>
     <title><![CDATA[vue-cli结合Element-UI]]></title>
     <url>%2F2017%2F07%2F11%2Fvue-cli%E7%BB%93%E5%90%88Element-UI%2F</url>
     <content type="text"><![CDATA[Element-Ui 的使用最近因为手上没有什么大的项目，就想着做点什么（果然是不喜欢闲下来的人），刚好瞄到后台小哥哥在用AmazeUi写一套后台管理系统，突然就萌生了想用vue一起写一套的想法啊！ 没办法，总不能浪费一个现成的练手项目吧，还有人免费提供接口（小小的可耻一下）好了，既然要决定要用vue写后台管理系统，当然免不了找度娘瞧一瞧有没有适合的UI框架了。最后选了一番，选择了由饿了嘛Element-ui（主要是没找到比这适合的了）。下面讲一下两者一起使用需要做哪些准备。 1 Node.js的安装这个直接在node的官网下载就好因为国内npm速度受网速影响，所以建议安装一下淘宝镜像（可自行百度，是我偷懒了）后面npm全部可以改成用淘宝镜像cnpm 2 安装 vue-clinpm install -g vue-cli //这里推荐用-g全局安装一下 3 使用vue-cli初始化项目vue init webpack my-project(最后这个为你要建的项目文件名称) 4 进入目录cd my-project 5 安装Element-Uinpm i element-ui 6 安装依赖npm install你以为这样就好了嘛，其实并没有，我们需要去程序的入口文件main.js，去加载我们下载好的的Element-UI 7 开始运行npm run dev 8 访问地址localhost:8080 好了，至此就可以在vue文件中编写Element-ui的组件了，后面我会写一些在开发过程中遇过的坑了]]></content>
@@ -52,8 +63,8 @@
         <category>公告</category>
       </categories>
       <tags>
-        <tag>vue</tag>
         <tag>随笔</tag>
+        <tag>vue</tag>
         <tag>CSS</tag>
         <tag>Javascript</tag>
         <tag>Html</tag>
