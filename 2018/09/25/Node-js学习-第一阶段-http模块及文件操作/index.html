@@ -92,7 +92,7 @@
 <link href="/css/main.css?v=5.1.1" rel="stylesheet" type="text/css" />
 
 
-  <meta name="keywords" content="Hexo, NexT,wanWx" />
+  <meta name="keywords" content="Node," />
 
 
 
@@ -110,15 +110,21 @@
 
 
 
-<meta name="description" content="这是一个假的程序猿">
-<meta property="og:type" content="website">
-<meta property="og:title" content="IIssWan&#39;s Notes">
-<meta property="og:url" content="http://wanWx.github.io/tags/Html/index.html">
+<meta name="description" content="Node.js了解简单了解一下Node.js，众所周知现在是大前端时代，Javascript也可以在服务的运行了，这主要依靠Node.js。Node.js可以说是目前前端涉足后端的最佳技能之一了，早在最初，前端开发一直处于尴尬的“页面仔”的定位中，直到后来大家开始重视前后端开发分离，从工程到团队两个角度都分开，后端偏向单纯的API接口，前端复制调用API接口进行展示和业务调用。现在Node.js的">
+<meta name="keywords" content="Node">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Node.js学习-第一阶段-http模块及文件操作">
+<meta property="og:url" content="http://wanWx.github.io/2018/09/25/Node-js学习-第一阶段-http模块及文件操作/index.html">
 <meta property="og:site_name" content="IIssWan&#39;s Notes">
-<meta property="og:description" content="这是一个假的程序猿">
+<meta property="og:description" content="Node.js了解简单了解一下Node.js，众所周知现在是大前端时代，Javascript也可以在服务的运行了，这主要依靠Node.js。Node.js可以说是目前前端涉足后端的最佳技能之一了，早在最初，前端开发一直处于尴尬的“页面仔”的定位中，直到后来大家开始重视前后端开发分离，从工程到团队两个角度都分开，后端偏向单纯的API接口，前端复制调用API接口进行展示和业务调用。现在Node.js的">
+<meta property="og:image" content="http://wanwx.github.io/images/201806301530324176.jpg">
+<meta property="og:image" content="http://wanwx.github.io/images/b45c2a60a1a58141cd28511e82520897.jpg">
+<meta property="og:image" content="http://wanwx.github.io/images/aac4fe6b8e1246c2ba7c3b25e1b526e2_th.jpg">
+<meta property="og:updated_time" content="2018-09-25T15:58:14.184Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="IIssWan&#39;s Notes">
-<meta name="twitter:description" content="这是一个假的程序猿">
+<meta name="twitter:title" content="Node.js学习-第一阶段-http模块及文件操作">
+<meta name="twitter:description" content="Node.js了解简单了解一下Node.js，众所周知现在是大前端时代，Javascript也可以在服务的运行了，这主要依靠Node.js。Node.js可以说是目前前端涉足后端的最佳技能之一了，早在最初，前端开发一直处于尴尬的“页面仔”的定位中，直到后来大家开始重视前后端开发分离，从工程到团队两个角度都分开，后端偏向单纯的API接口，前端复制调用API接口进行展示和业务调用。现在Node.js的">
+<meta name="twitter:image" content="http://wanwx.github.io/images/201806301530324176.jpg">
 
 
 
@@ -146,13 +152,13 @@
 
 
 
-  <link rel="canonical" href="http://wanWx.github.io/tags/Html/"/>
+  <link rel="canonical" href="http://wanWx.github.io/2018/09/25/Node-js学习-第一阶段-http模块及文件操作/"/>
 
 
 
 
 
-  <title>标签: Html | IIssWan's Notes</title>
+  <title>Node.js学习-第一阶段-http模块及文件操作 | IIssWan's Notes</title>
 </head>
 
 <body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
@@ -177,7 +183,7 @@
     
   
 
-  <div class="container sidebar-position-left  ">
+  <div class="container sidebar-position-left page-post-detail ">
     <div class="headband"></div>
 
     <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
@@ -305,44 +311,209 @@
           <div id="content" class="content">
             
 
-  <div id="posts" class="posts-collapse">
-    <div class="collection-title">
-      <h1>Html<small>标签</small>
-      </h1>
-    </div>
+  <div id="posts" class="posts-expand">
+    
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
+    <link itemprop="mainEntityOfPage" href="http://wanWx.github.io/2018/09/25/Node-js学习-第一阶段-http模块及文件操作/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="wanWx">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/img1.jpg">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="IIssWan's Notes">
+    </span>
 
     
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">Node.js学习-第一阶段-http模块及文件操作</h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2018-09-25T22:44:12+08:00">
+                2018-09-25
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+            <span class="post-category" >
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/Node/" itemprop="url" rel="index">
+                    <span itemprop="name">Node</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+          
+
+          
+          
+             <span id="/2018/09/25/Node-js学习-第一阶段-http模块及文件操作/" class="leancloud_visitors" data-flag-title="Node.js学习-第一阶段-http模块及文件操作">
+               <span class="post-meta-divider">|</span>
+               <span class="post-meta-item-icon">
+                 <i class="fa fa-eye"></i>
+               </span>
+               
+                 <span class="post-meta-item-text">阅读次数 </span>
+               
+                 <span class="leancloud-visitors-count"></span>
+             </span>
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    <div class="post-body" itemprop="articleBody">
+
+      
       
 
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
+      
+        <h3 id="Node-js了解"><a href="#Node-js了解" class="headerlink" title="Node.js了解"></a>Node.js了解</h3><p><img src="/images/201806301530324176.jpg" style="width: 50%;margin: 0 auto;" class="full-image"><br>简单了解一下<code>Node.js</code>，众所周知现在是大前端时代，<code>Javascript</code>也可以在服务的运行了，这主要依靠Node.js。Node.js可以说是目前前端涉足后端的最佳技能之一了，早在最初，前端开发一直处于尴尬的“页面仔”的定位中，直到后来大家开始重视前后端开发分离，从工程到团队两个角度都分开，后端偏向单纯的API接口，前端复制调用API接口进行展示和业务调用。现在Node.js的出现意味则前端开发可以从前端到后端整套开发都可以包了。</p>
+<h4 id="安装及配置"><a href="#安装及配置" class="headerlink" title="安装及配置"></a>安装及配置</h4><p>省略了以后再补(PS:主要我懒得写了)<br><img src="/images/b45c2a60a1a58141cd28511e82520897.jpg" style="width: 50%;margin: 0 auto;" class="full-image"></p>
+<h4 id="nodeJs之http系统模块"><a href="#nodeJs之http系统模块" class="headerlink" title="nodeJs之http系统模块"></a>nodeJs之http系统模块</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div></pre></td><td class="code"><pre><div class="line">const http = require(&apos;http&apos;); // 引入http模块</div><div class="line"></div><div class="line">var server = http.createServer(function (req, res) &#123; // req:请求对象 和 res: 响应对象</div><div class="line">	res.write(&apos;404&apos;); // 需要传递给客户端的内容</div><div class="line">	res.end(); // 表示此次请求已处理完成。</div><div class="line">&#125;);</div><div class="line"></div><div class="line">server.listen(8080); // http.listen() 方法就可以让该HTTP服务器在指定端口监听</div></pre></td></tr></table></figure>
+<h4 id="nodeJs之fs文件模块"><a href="#nodeJs之fs文件模块" class="headerlink" title="nodeJs之fs文件模块"></a>nodeJs之fs文件模块</h4><p>简单贴代码讲解吧<br><img src="/images/aac4fe6b8e1246c2ba7c3b25e1b526e2_th.jpg" style="width: 50%;margin: 0 auto;" class="full-image"><br>读取文件<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div></pre></td><td class="code"><pre><div class="line">const http = require(&apos;http&apos;);</div><div class="line">const fs = require(&apos;fs&apos;); // 引入fs文件模块</div><div class="line"></div><div class="line">var server = http.createServer(function (req, res) &#123;</div><div class="line">	var file_name = &apos;./www&apos; + req.url;</div><div class="line"></div><div class="line">	fs.readFile(file_name, function(err, data) &#123; // 第一个参数是文件的路径</div><div class="line">		if (err) &#123;</div><div class="line">			res.write(&apos;404&apos;);</div><div class="line">		&#125; else &#123;</div><div class="line">			res.write(data);</div><div class="line">		&#125;</div><div class="line">		res.end();</div><div class="line">	&#125;);</div><div class="line">&#125;);</div><div class="line"></div><div class="line">server.listen(8080);</div></pre></td></tr></table></figure></p>
+<p>写入文件<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line">const fs = require(&apos;fs&apos;);</div><div class="line"></div><div class="line">fs.writeFile(&apos;aaa.txt&apos;,&apos;l love you&apos;, function(err) &#123; // 文件名，内容</div><div class="line">	console.log(err)</div><div class="line">&#125;);</div></pre></td></tr></table></figure></p>
+<p>后面的持续更新</p>
 
-      <h2 class="post-title">
+      
+    </div>
+
+    <div>
+      
         
-            <a class="post-title-link" href="/2017/05/10/hello-world/" itemprop="url">
-              
-                <span itemprop="name">Hello World</span>
-              
-            </a>
+
+      
+    </div>
+
+    <div>
+      
         
-      </h2>
 
-      <div class="post-meta">
-        <time class="post-time" itemprop="dateCreated"
-              datetime="2017-05-10T21:32:41+08:00"
-              content="2017-05-10" >
-          05-10
-        </time>
-      </div>
+      
+    </div>
 
-    </header>
+    <div>
+      
+        
+
+      
+    </div>
+
+    <footer class="post-footer">
+      
+        <div class="post-tags">
+          
+            <a href="/tags/Node/" rel="tag"># Node</a>
+          
+        </div>
+      
+
+      
+        
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/2018/04/03/面试碰到的问题/" rel="next" title="面试碰到的问题">
+                <i class="fa fa-chevron-left"></i> 面试碰到的问题
+              </a>
+            
+          </div>
+
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
+            
+          </div>
+        </div>
+      
+
+      
+      
+    </footer>
   </article>
 
 
-    
-  </div>
 
-  
+    <div class="post-spread">
+      
+        <!-- JiaThis Button BEGIN -->
+<div class="jiathis_style">
+  <a class="jiathis_button_tsina"></a>
+  <a class="jiathis_button_tqq"></a>
+  <a class="jiathis_button_weixin"></a>
+  <a class="jiathis_button_cqq"></a>
+  <a class="jiathis_button_douban"></a>
+  <a class="jiathis_button_renren"></a>
+  <a class="jiathis_button_qzone"></a>
+  <a class="jiathis_button_kaixin001"></a>
+  <a class="jiathis_button_copy"></a>
+  <a href="http://www.jiathis.com/share" class="jiathis jiathis_txt jiathis_separator jtico jtico_jiathis" target="_blank"></a>
+  <a class="jiathis_counter_style"></a>
+</div>
+<script type="text/javascript" >
+  var jiathis_config={
+    hideMore:false
+  }
+</script>
+<script type="text/javascript" src="http://v3.jiathis.com/code/jia.js" charset="utf-8"></script>
+<!-- JiaThis Button END -->
+
+      
+    </div>
+  </div>
 
 
           </div>
@@ -350,6 +521,10 @@
 
 
           
+  <div class="comments" id="comments">
+    
+  </div>
+
 
         </div>
         
@@ -369,8 +544,17 @@
       
 
       
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap" >
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview">
+            站点概览
+          </li>
+        </ul>
+      
 
-      <section class="site-overview sidebar-panel sidebar-panel-active">
+      <section class="site-overview sidebar-panel">
         <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
           <img class="site-author-image" itemprop="image"
                src="/images/img1.jpg"
@@ -459,6 +643,22 @@
 
       </section>
 
+      
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#Node-js了解"><span class="nav-number">1.</span> <span class="nav-text">Node.js了解</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#安装及配置"><span class="nav-number">1.1.</span> <span class="nav-text">安装及配置</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#nodeJs之http系统模块"><span class="nav-number">1.2.</span> <span class="nav-text">nodeJs之http系统模块</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#nodeJs之fs文件模块"><span class="nav-number">1.3.</span> <span class="nav-text">nodeJs之fs文件模块</span></a></li></ol></li></ol></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
       
 
       
@@ -579,6 +779,10 @@
 
 
   
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.1.1"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=5.1.1"></script>
+
+
 
   
 

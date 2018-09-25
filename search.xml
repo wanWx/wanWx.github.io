@@ -1,6 +1,17 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title><![CDATA[Node.js学习-第一阶段-http模块及文件操作]]></title>
+    <url>%2F2018%2F09%2F25%2FNode-js%E5%AD%A6%E4%B9%A0-%E7%AC%AC%E4%B8%80%E9%98%B6%E6%AE%B5-http%E6%A8%A1%E5%9D%97%E5%8F%8A%E6%96%87%E4%BB%B6%E6%93%8D%E4%BD%9C%2F</url>
+    <content type="text"><![CDATA[Node.js了解简单了解一下Node.js，众所周知现在是大前端时代，Javascript也可以在服务的运行了，这主要依靠Node.js。Node.js可以说是目前前端涉足后端的最佳技能之一了，早在最初，前端开发一直处于尴尬的“页面仔”的定位中，直到后来大家开始重视前后端开发分离，从工程到团队两个角度都分开，后端偏向单纯的API接口，前端复制调用API接口进行展示和业务调用。现在Node.js的出现意味则前端开发可以从前端到后端整套开发都可以包了。 安装及配置省略了以后再补(PS:主要我懒得写了) nodeJs之http系统模块12345678const http = require(&apos;http&apos;); // 引入http模块var server = http.createServer(function (req, res) &#123; // req:请求对象 和 res: 响应对象 res.write(&apos;404&apos;); // 需要传递给客户端的内容 res.end(); // 表示此次请求已处理完成。&#125;);server.listen(8080); // http.listen() 方法就可以让该HTTP服务器在指定端口监听 nodeJs之fs文件模块简单贴代码讲解吧读取文件1234567891011121314151617const http = require(&apos;http&apos;);const fs = require(&apos;fs&apos;); // 引入fs文件模块var server = http.createServer(function (req, res) &#123; var file_name = &apos;./www&apos; + req.url; fs.readFile(file_name, function(err, data) &#123; // 第一个参数是文件的路径 if (err) &#123; res.write(&apos;404&apos;); &#125; else &#123; res.write(data); &#125; res.end(); &#125;);&#125;);server.listen(8080); 写入文件12345const fs = require(&apos;fs&apos;);fs.writeFile(&apos;aaa.txt&apos;,&apos;l love you&apos;, function(err) &#123; // 文件名，内容 console.log(err)&#125;); 后面的持续更新]]></content>
+      <categories>
+        <category>Node</category>
+      </categories>
+      <tags>
+        <tag>Node</tag>
+      </tags>
+  </entry>
+  <entry>
     <title><![CDATA[面试碰到的问题]]></title>
     <url>%2F2018%2F04%2F03%2F%E9%9D%A2%E8%AF%95%E7%A2%B0%E5%88%B0%E7%9A%84%E9%97%AE%E9%A2%98%2F</url>
     <content type="text"><![CDATA[写这篇文章的初衷离职了一段时间，也参加了一些面试，突然发现自己的基础还比较薄弱，所以想通过整理一些碰到的面试问题，进行知识点的梳理，不排除分享一些HR问的骚操作。 js 遍历json对象JSON数组 (无规律)123456789101112131415var json = [ &#123;dd:&apos;SB&apos;,AA:&apos;东东&apos;,re1:123&#125;, &#123;cccc:&apos;dd&apos;,lk:&apos;1qw&apos;&#125;];for(var i=0,l=json.length;i&lt;l;i++)&#123; for(var key in json[i])&#123; console.log(key+&apos;:&apos;+json[i][key]); &#125;&#125;// dd:SB// AA:东东// re1:123// cccc:dd// lk:1qw JSON数组 (有规律)123456789101112var packJson = [ &#123;&quot;name&quot;:&quot;nikita&quot;, &quot;password&quot;:&quot;1111&quot;&#125;, &#123;&quot;name&quot;:&quot;tony&quot;, &quot;password&quot;:&quot;2222&quot;&#125;]; for(var p in packJson)&#123; //遍历json数组时，这么写p为索引，0,1 console.log(packJson[p].name + &quot; &quot; + packJson[p].password);&#125;;// nikita 1111// tony 2222 JSON对象1234567891011var myJson = &#123; &quot;name&quot;:&quot;caibaojian&quot;, &quot;password&quot;:&quot;1111&quot;&#125;; for(var p in myJson)&#123; //遍历json对象的每个key/value对,p为key console.log(p + &quot; &quot; + myJson[p]);&#125;// name caibaojian// password 1111 顺带举例几个JSON常用操作123456789101112131415161718192021JSON字符串：var isStr = &apos;&#123; &quot;name&quot;: &quot;wwx&quot;, &quot;sex&quot;: &quot;man&quot;&#125;&apos;;JSON对象：var isObj = &#123; &quot;name&quot;: &quot;wwx&quot;, &quot;sex&quot;: &quot;man&quot;&#125;;//字符串转JSONvar obj = JSON.parse(isStr);//JSON转字符串var str = JSON.stringify(obj);//JSON增加元素obj[&apos;key&apos;] = value;//JSON删除元素delete obj[&apos;key&apos;];//JSON按数字排序obj.sort(sortBy(&apos;key&apos;, false, parseInt));//JSON按字符串排序obj.sort(sortBy(&apos;key&apos;, false, String));]]></content>
@@ -63,9 +74,9 @@
         <category>公告</category>
       </categories>
       <tags>
-        <tag>随笔</tag>
         <tag>vue</tag>
         <tag>CSS</tag>
+        <tag>随笔</tag>
         <tag>Javascript</tag>
         <tag>Html</tag>
       </tags>
