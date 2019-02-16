@@ -110,21 +110,19 @@
 
 
 
-<meta name="description" content="Express入门Express 是node 第三方框架，大家都知道，框架的意义就在于能大大简化程序地开发。那么我们就看一下Express是怎么简化node程序开发的。">
+<meta name="description" content="启程helloworld 安装npm i express -S 1:引入express第三方对象 2:构建一个服务器对象 3:开启服务器监听端口 4:处理响应 在express中，保留了原生http的相关属性和函数">
 <meta name="keywords" content="Node">
 <meta property="og:type" content="article">
-<meta property="og:title" content="Node.js学习-第二阶段-Express框架学习">
-<meta property="og:url" content="http://wanWx.github.io/2018/10/08/Node-js学习-第二阶段-Express框架学习/index.html">
+<meta property="og:title" content="Node.js学习-第二阶段-Express框架学习2">
+<meta property="og:url" content="http://wanWx.github.io/2019/02/14/Node-js学习-第二阶段-Express框架学习2/index.html">
 <meta property="og:site_name" content="IIssWan&#39;s Notes">
-<meta property="og:description" content="Express入门Express 是node 第三方框架，大家都知道，框架的意义就在于能大大简化程序地开发。那么我们就看一下Express是怎么简化node程序开发的。">
-<meta property="og:image" content="http://wanwx.github.io/images/timg.jpg">
-<meta property="og:image" content="http://wanwx.github.io/images/qig_1.jpg">
-<meta property="og:image" content="http://wanwx.github.io/images/36eb0.jpg">
-<meta property="og:updated_time" content="2019-02-16T02:06:41.052Z">
+<meta property="og:description" content="启程helloworld 安装npm i express -S 1:引入express第三方对象 2:构建一个服务器对象 3:开启服务器监听端口 4:处理响应 在express中，保留了原生http的相关属性和函数">
+<meta property="og:image" content="http://wanwx.github.io/images/1531832873008.png">
+<meta property="og:updated_time" content="2019-02-16T02:24:30.297Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Node.js学习-第二阶段-Express框架学习">
-<meta name="twitter:description" content="Express入门Express 是node 第三方框架，大家都知道，框架的意义就在于能大大简化程序地开发。那么我们就看一下Express是怎么简化node程序开发的。">
-<meta name="twitter:image" content="http://wanwx.github.io/images/timg.jpg">
+<meta name="twitter:title" content="Node.js学习-第二阶段-Express框架学习2">
+<meta name="twitter:description" content="启程helloworld 安装npm i express -S 1:引入express第三方对象 2:构建一个服务器对象 3:开启服务器监听端口 4:处理响应 在express中，保留了原生http的相关属性和函数">
+<meta name="twitter:image" content="http://wanwx.github.io/images/1531832873008.png">
 
 
 
@@ -152,13 +150,13 @@
 
 
 
-  <link rel="canonical" href="http://wanWx.github.io/2018/10/08/Node-js学习-第二阶段-Express框架学习/"/>
+  <link rel="canonical" href="http://wanWx.github.io/2019/02/14/Node-js学习-第二阶段-Express框架学习2/"/>
 
 
 
 
 
-  <title>Node.js学习-第二阶段-Express框架学习 | IIssWan's Notes</title>
+  <title>Node.js学习-第二阶段-Express框架学习2 | IIssWan's Notes</title>
 </head>
 
 <body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
@@ -321,7 +319,7 @@
   
 
   <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
-    <link itemprop="mainEntityOfPage" href="http://wanWx.github.io/2018/10/08/Node-js学习-第二阶段-Express框架学习/">
+    <link itemprop="mainEntityOfPage" href="http://wanWx.github.io/2019/02/14/Node-js学习-第二阶段-Express框架学习2/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="wanWx">
@@ -338,7 +336,7 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">Node.js学习-第二阶段-Express框架学习</h1>
+          <h1 class="post-title" itemprop="name headline">Node.js学习-第二阶段-Express框架学习2</h1>
         
 
         <div class="post-meta">
@@ -350,8 +348,8 @@
               
                 <span class="post-meta-item-text">发表于</span>
               
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2018-10-08T22:23:37+08:00">
-                2018-10-08
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2019-02-14T22:23:37+08:00">
+                2019-02-14
               </time>
             
 
@@ -390,7 +388,7 @@
 
           
           
-             <span id="/2018/10/08/Node-js学习-第二阶段-Express框架学习/" class="leancloud_visitors" data-flag-title="Node.js学习-第二阶段-Express框架学习">
+             <span id="/2019/02/14/Node-js学习-第二阶段-Express框架学习2/" class="leancloud_visitors" data-flag-title="Node.js学习-第二阶段-Express框架学习2">
                <span class="post-meta-divider">|</span>
                <span class="post-meta-item-icon">
                  <i class="fa fa-eye"></i>
@@ -418,46 +416,75 @@
       
 
       
-        <h3 id="Express入门"><a href="#Express入门" class="headerlink" title="Express入门"></a>Express入门</h3><p><img src="/images/timg.jpg" class="full-image"><br>Express 是node 第三方框架，大家都知道，框架的意义就在于能大大简化程序地开发。那么我们就看一下Express是怎么简化node程序开发的。<a id="more"></a><br><img src="/images/qig_1.jpg" style="width: 50%;margin: 0 auto;" class="full-image"></p>
-<h4 id="Express安装、配置、接受请求、响应"><a href="#Express安装、配置、接受请求、响应" class="headerlink" title="Express安装、配置、接受请求、响应"></a>Express安装、配置、接受请求、响应</h4><h5 id="安装Express框架："><a href="#安装Express框架：" class="headerlink" title="安装Express框架："></a>安装Express框架：</h5><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">npm install --save express</div></pre></td></tr></table></figure>
-<p>–save参数，表示自动修改package.json文件，自动添加依赖项。<br> <code>express</code>用法很简单，按照咱们以前原生的写法，可能需要一个<code>http.creatServer</code>等等等等的。<br> 在这里不用，直接：<br> 创建服务<br> <figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">var server = express();</div></pre></td></tr></table></figure></p>
-<p>监听端口<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">server.listen(8080);</div></pre></td></tr></table></figure></p>
-<h5 id="处理请求"><a href="#处理请求" class="headerlink" title="处理请求"></a>处理请求</h5><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line">server.use(&apos;目录&apos;,function(req,res)&#123;&#125;) // 挂载中间件用的，默认挂载在根目录/</div><div class="line">里面包含3种方法</div><div class="line">send() // 可以写json 数据</div><div class="line">write() // 与原来的write方法一样，只能写出String/Buffer</div><div class="line">end() // 与原来一样</div></pre></td></tr></table></figure>
-<h5 id="3种请求方法"><a href="#3种请求方法" class="headerlink" title="3种请求方法"></a>3种请求方法</h5><p><img src="/images/36eb0.jpg" style="width: 50%;margin: 0 auto;" class="full-image"></p>
-<h6 id="GET请求"><a href="#GET请求" class="headerlink" title="GET请求"></a>GET请求</h6><p>例如访问：<a href="http://localhost:8080/?name=萨朗和哟" target="_blank" rel="external">http://localhost:8080/?name=萨朗和哟</a><br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">server.get(&apos;/&apos;, function(req, res)&#123;</div><div class="line">  console.log(req.query.name);//输出：萨朗和哟</div><div class="line">&#125;);</div></pre></td></tr></table></figure></p>
-<h6 id="POST请求"><a href="#POST请求" class="headerlink" title="POST请求"></a>POST请求</h6><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line">const bodyParser = require(&apos;body-parser&apos;); // 需要使用中间件进行解析</div><div class="line">server.use(bodyParser.urlencoded(&#123;extended: false&#125;));//解析POST数据</div><div class="line"></div><div class="line">req.body //POST请求的数据</div></pre></td></tr></table></figure>
-<h6 id="USE请求"><a href="#USE请求" class="headerlink" title="USE请求"></a>USE请求</h6><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line">server.use(&apos;/&apos;, function(req, res)&#123;</div><div class="line">res.send(&apos;hello express&apos;);</div><div class="line">// res.end(); 使用send()方法返回时，可以省略此行，</div><div class="line">&#125;);</div></pre></td></tr></table></figure>
-<p>完整例子<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div></pre></td><td class="code"><pre><div class="line">const express = require(&apos;express&apos;);</div><div class="line">var server = express();</div><div class="line"></div><div class="line">//用户数据</div><div class="line">var users = &#123;</div><div class="line">	&apos;aaa&apos;:&apos;123456&apos;,</div><div class="line">	&apos;bbb&apos;:&apos;654321&apos;,</div><div class="line">	&apos;ccc&apos;:&apos;987655&apos;</div><div class="line">&#125;;</div><div class="line"></div><div class="line">server.get(&apos;/login&apos;,function(req,res)&#123;</div><div class="line">	var user = req.query[&apos;user&apos;];</div><div class="line">	var pass = req.query[&apos;pass&apos;];</div><div class="line"></div><div class="line">	if(users[user] == null)&#123;</div><div class="line">		res.res.send(&#123;ok:false,mas:&apos;此用户不存在&apos;&#125;)</div><div class="line">	&#125;else&#123;</div><div class="line">		if(users[user]!=pass)&#123;</div><div class="line">			res.send(&#123;ok:false,mas:&apos;密码错了&apos;&#125;)</div><div class="line">		&#125;else&#123;</div><div class="line">			res.send(&#123;ok:true,msg:&apos;成功&apos;&#125;)</div><div class="line">		&#125;</div><div class="line">	&#125;</div><div class="line">&#125;)</div><div class="line"></div><div class="line">server.listen(8080)</div></pre></td></tr></table></figure></p>
-<h4 id="res扩展函数"><a href="#res扩展函数" class="headerlink" title="res扩展函数"></a>res扩展函数</h4><figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div></pre></td><td class="code"><pre><div class="line">res.download(<span class="string">'./xxx.txt'</span>) <span class="comment">// 下载文件</span></div><div class="line">res.json(&#123;&#125;)  <span class="comment">// 响应json对象</span></div><div class="line">res.jsonp(数据) <span class="comment">// 配合jsonp   要求客户端请求的时候也是jsonp的方式,  并且callback=xxx</span></div><div class="line">res.redirect()  <span class="comment">//  重定向 301是永久重定向, 302临时重定向</span></div><div class="line">res.send()    <span class="comment">// 发送字符串数据自动加content-type</span></div><div class="line">res.sendFile() <span class="comment">// 显示一个文件</span></div><div class="line">res.sendStatus() <span class="comment">// 响应状态码</span></div></pre></td></tr></table></figure>
-<h4 id="服务端处理错误和404页面找不到"><a href="#服务端处理错误和404页面找不到" class="headerlink" title="服务端处理错误和404页面找不到"></a>服务端处理错误和404页面找不到</h4><ul>
-<li>404页面响应<code>router.all(&#39;*&#39;,()=&gt;{} )</code></li>
-<li>触发错误<ul>
-<li>next(err);</li>
-<li>处理错误  app.use( 4参数函数 )</li>
+        <h4 id="启程helloworld"><a href="#启程helloworld" class="headerlink" title="启程helloworld"></a>启程helloworld</h4><ul>
+<li>安装<code>npm i express -S</code></li>
+<li>1:引入express第三方对象</li>
+<li>2:构建一个服务器对象</li>
+<li>3:开启服务器监听端口</li>
+<li>4:处理响应</li>
+<li><p>在express中，保留了原生http的相关属性和函数</p>
+<a id="more"></a>
+<h4 id="app-use-虚拟目录-fn"><a href="#app-use-虚拟目录-fn" class="headerlink" title="app.use(虚拟目录,fn)"></a>app.use(虚拟目录,fn)</h4></li>
+<li><p>小练习</p>
+<ul>
+<li>选择性荤菜素菜</li>
+</ul>
+</li>
+<li>用户/abc/def的请求<ul>
+<li>选择性调用app.use(‘/abc’,fn)的中间件</li>
+<li>但是内部req.url则去除了/abc这个暗号</li>
+</ul>
+</li>
+<li>app.use(fn)是任何请求都会触发执行的</li>
+</ul>
+<h4 id="中间件类别-了解"><a href="#中间件类别-了解" class="headerlink" title="中间件类别(了解)"></a>中间件类别(了解)</h4><ul>
+<li>应用级中间件 <code>app.use(事fn)</code></li>
+<li>路由级中间件 <ul>
+<li>1:获取路径级中间件</li>
+<li>2:配置路由</li>
+<li>3:加入到应用程序控制中<code>app.use(router);</code></li>
+</ul>
+</li>
+<li>内置中间件<ul>
+<li>处理一些静态资源文件的返回(设置将某个目录下的资源文件向外暴露)  <ul>
+<li>当url匹配上我设置的目录下的子文件后，自动返回该文件</li>
+<li>加入到应用程序控制中<code>app.use(内置中间件);</code></li>
 </ul>
 </li>
 </ul>
-<h4 id="nodemon"><a href="#nodemon" class="headerlink" title="nodemon"></a>nodemon</h4><ul>
-<li>修改代码自动重启</li>
-<li>安装全局命令行工具 <code>npm i -g nodemon</code></li>
-<li>进入到指定目录命令行 <code>nodemon ./xxx.js</code></li>
-<li>手动触发重启，在命令行输入 rs回车</li>
-</ul>
-<hr>
-<h4 id="Cookie-Session"><a href="#Cookie-Session" class="headerlink" title="Cookie Session"></a>Cookie Session</h4><h5 id="Cookie"><a href="#Cookie" class="headerlink" title="Cookie"></a>Cookie</h5><ul>
-<li>在浏览器保存一些数据，每次请求都会带过来</li>
-<li>受客户端控制，不安全，有限（4K7）</li>
-<li>在cookie中有一个<code>session</code>的ID，服务器利用此ID找到<code>session</code>文件进行操作</li>
-</ul>
-<h6 id="发送cookie"><a href="#发送cookie" class="headerlink" title="发送cookie:"></a>发送cookie:</h6><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">res.secret = &apos;字符串&apos; // cookie签名</div><div class="line">res.cookie(名字，值，&#123;path : &apos;/&apos;, maxAge: 毫秒， signed: true&#125;);</div></pre></td></tr></table></figure>
-<h6 id="读取cookie"><a href="#读取cookie" class="headerlink" title="读取cookie:"></a>读取cookie:</h6><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">var cookieParser = require(&apos;cookie-parser&apos;);</div><div class="line">server.use(cookieParser()); // 未签名的cookie</div><div class="line">server.use(cookieParser(签名)); // 签名的cookie</div></pre></td></tr></table></figure>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div></pre></td><td class="code"><pre><div class="line">const cookieParser = require(&apos;cookie-parser&apos;);</div><div class="line"></div><div class="line">server.use(cookieParser());</div><div class="line"></div><div class="line">server.use(&apos;/&apos;, function(req, res)&#123;</div><div class="line">	req.secret = &apos;ffdkfjf&apos;; // 在server.use(cookieParser(签名))时候可以省略</div><div class="line">	res.cookie(&apos;user&apos;, &apos;444&apos;, &#123;signed : true&#125;); // signed为是否签名</div><div class="line">	req.cookies; // 未签名版</div><div class="line">	req.signedCookies; // 签名版</div><div class="line">	res.send(&quot;hello cookie&quot;);</div><div class="line">&#125;);</div></pre></td></tr></table></figure>
-<h6 id="删除cookie"><a href="#删除cookie" class="headerlink" title="删除cookie:"></a>删除cookie:</h6><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">res.clearCookie(&apos;cookie的名&apos;);</div></pre></td></tr></table></figure>
-<h5 id="Session"><a href="#Session" class="headerlink" title="Session"></a>Session</h5><ul>
-<li><code>session</code> – 保存数据，保存在服务端</li>
-<li>安全</li>
-<li>基于<code>cookie</code>实现的，不能独立存在<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div></pre></td><td class="code"><pre><div class="line">const cookieSession = require(&apos;cookie-session&apos;);</div><div class="line"></div><div class="line">server.use(cookieSession(&#123;</div><div class="line">	name : &apos;session&apos;, //cookie名</div><div class="line">	//签名数组（越多越安全），每次请求都会进行循环下一个</div><div class="line">	keys : [&apos;aaa&apos;, &apos;bbb&apos;, &apos;ccc&apos;],</div><div class="line">	maxAge: 24*3600*1000 //cookie存活时间（单位毫秒）</div><div class="line">&#125;));</div></pre></td></tr></table></figure>
 </li>
+<li>第三方中间件<ul>
+<li>更方便的处理cookie/session,简易的解析post请求体数据</li>
+<li>在npm上下载并使用</li>
+<li>加入到应用程序控制中<code>app.use(第三方中间件);</code></li>
+</ul>
+</li>
+<li>错误处理中间件<ul>
+<li>在express中统一处理错误<code>next(err)</code></li>
+</ul>
+</li>
+</ul>
+<h4 id="路由中间件"><a href="#路由中间件" class="headerlink" title="路由中间件"></a>路由中间件</h4><ul>
+<li>一个请求进来(总网线),分发到各自不同的处理(分多根网线给其他人)<ul>
+<li><strong>分流</strong></li>
+</ul>
+</li>
+<li>后端路由<ul>
+<li>(请求方式 + URL = 判断依据)(分流的判断依据) -&gt; 做不同的处理(分流后的行为)</li>
+</ul>
+</li>
+<li>使用步骤<ul>
+<li>1:获取路由中间件对象 <code>let router = express.Router();</code></li>
+<li>2:配置路由规则 <code>router.请求方式(URL,fn事)</code><ul>
+<li>fn中参数有req,res,next</li>
+</ul>
+</li>
+<li>3:将router加入到应用<code>app.use(router)</code></li>
+</ul>
+</li>
+</ul>
+<h4 id="路由"><a href="#路由" class="headerlink" title="路由"></a>路由</h4><ul>
+<li><img src="/images/1531832873008.png" style="width: 50%;margin: 0 auto;" class="full-image"></li>
 </ul>
 
       
@@ -501,8 +528,8 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/2018/09/25/Node-js学习-第一阶段-http模块及文件操作/" rel="next" title="Node.js学习-第一阶段-http模块及文件操作">
-                <i class="fa fa-chevron-left"></i> Node.js学习-第一阶段-http模块及文件操作
+              <a href="/2018/10/08/Node-js学习-第二阶段-Express框架学习/" rel="next" title="Node.js学习-第二阶段-Express框架学习">
+                <i class="fa fa-chevron-left"></i> Node.js学习-第二阶段-Express框架学习
               </a>
             
           </div>
@@ -511,8 +538,8 @@
 
           <div class="post-nav-prev post-nav-item">
             
-              <a href="/2019/02/14/Node-js学习-第二阶段-Express框架学习2/" rel="prev" title="Node.js学习-第二阶段-Express框架学习2">
-                Node.js学习-第二阶段-Express框架学习2 <i class="fa fa-chevron-right"></i>
+              <a href="/2019/02/16/MongoDB学习/" rel="prev" title="MongoDB学习">
+                MongoDB学习 <i class="fa fa-chevron-right"></i>
               </a>
             
           </div>
@@ -692,7 +719,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#Express入门"><span class="nav-number">1.</span> <span class="nav-text">Express入门</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#Express安装、配置、接受请求、响应"><span class="nav-number">1.1.</span> <span class="nav-text">Express安装、配置、接受请求、响应</span></a><ol class="nav-child"><li class="nav-item nav-level-5"><a class="nav-link" href="#安装Express框架："><span class="nav-number">1.1.1.</span> <span class="nav-text">安装Express框架：</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#处理请求"><span class="nav-number">1.1.2.</span> <span class="nav-text">处理请求</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#3种请求方法"><span class="nav-number">1.1.3.</span> <span class="nav-text">3种请求方法</span></a><ol class="nav-child"><li class="nav-item nav-level-6"><a class="nav-link" href="#GET请求"><span class="nav-number">1.1.3.1.</span> <span class="nav-text">GET请求</span></a></li><li class="nav-item nav-level-6"><a class="nav-link" href="#POST请求"><span class="nav-number">1.1.3.2.</span> <span class="nav-text">POST请求</span></a></li><li class="nav-item nav-level-6"><a class="nav-link" href="#USE请求"><span class="nav-number">1.1.3.3.</span> <span class="nav-text">USE请求</span></a></li></ol></li></ol></li><li class="nav-item nav-level-4"><a class="nav-link" href="#res扩展函数"><span class="nav-number">1.2.</span> <span class="nav-text">res扩展函数</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#服务端处理错误和404页面找不到"><span class="nav-number">1.3.</span> <span class="nav-text">服务端处理错误和404页面找不到</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#nodemon"><span class="nav-number">1.4.</span> <span class="nav-text">nodemon</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#Cookie-Session"><span class="nav-number">1.5.</span> <span class="nav-text">Cookie Session</span></a><ol class="nav-child"><li class="nav-item nav-level-5"><a class="nav-link" href="#Cookie"><span class="nav-number">1.5.1.</span> <span class="nav-text">Cookie</span></a><ol class="nav-child"><li class="nav-item nav-level-6"><a class="nav-link" href="#发送cookie"><span class="nav-number">1.5.1.1.</span> <span class="nav-text">发送cookie:</span></a></li><li class="nav-item nav-level-6"><a class="nav-link" href="#读取cookie"><span class="nav-number">1.5.1.2.</span> <span class="nav-text">读取cookie:</span></a></li><li class="nav-item nav-level-6"><a class="nav-link" href="#删除cookie"><span class="nav-number">1.5.1.3.</span> <span class="nav-text">删除cookie:</span></a></li></ol></li><li class="nav-item nav-level-5"><a class="nav-link" href="#Session"><span class="nav-number">1.5.2.</span> <span class="nav-text">Session</span></a></li></ol></li></ol></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-4"><a class="nav-link" href="#启程helloworld"><span class="nav-number">1.</span> <span class="nav-text">启程helloworld</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#app-use-虚拟目录-fn"><span class="nav-number">2.</span> <span class="nav-text">app.use(虚拟目录,fn)</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#中间件类别-了解"><span class="nav-number">3.</span> <span class="nav-text">中间件类别(了解)</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#路由中间件"><span class="nav-number">4.</span> <span class="nav-text">路由中间件</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#路由"><span class="nav-number">5.</span> <span class="nav-text">路由</span></a></li></ol></div>
             
 
           </div>
